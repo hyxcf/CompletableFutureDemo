@@ -44,6 +44,10 @@ public class ThenCombineDemo {
         String content = combineFuture.get();
         System.out.println("content=" + content);
         CommonUtils.printThreadLog("main end");
-    }
 
+        /**
+         * 总结
+         * thenCombine 用于合并两个没有依赖关系的异步任务
+         */
+    }
 }
