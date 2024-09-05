@@ -1,4 +1,4 @@
-package com.hyx.demo._05_completablefuture_exception;
+package com.hyx.introduce._05_completablefuture_exception;
 
 import com.hyx.utils.CommonUtils;
 

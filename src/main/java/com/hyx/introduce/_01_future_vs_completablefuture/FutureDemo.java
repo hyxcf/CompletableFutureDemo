@@ -1,7 +1,6 @@
-package com.hyx.demo._01_future_vs_completablefuture;
+package com.hyx.introduce._01_future_vs_completablefuture;
 
 import com.hyx.utils.CommonUtils;
-import org.springframework.beans.factory.annotation.Value;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;

@@ -1,4 +1,4 @@
-package com.hyx.demo._05_completablefuture_exception;
+package com.hyx.introduce._05_completablefuture_exception;
 
 import com.hyx.utils.CommonUtils;
 
@@ -25,8 +25,8 @@ public class HandleDemo2 {
             return result;
         }).thenApply(result -> {
 
-            String s = null;
-            int i = s.length();
+/*            String s = null;
+            int i = s.length();*/
 
             return result + " result2";
         }).handle((result, ex) -> {

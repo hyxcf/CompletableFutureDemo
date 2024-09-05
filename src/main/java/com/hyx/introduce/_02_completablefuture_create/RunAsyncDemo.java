@@ -1,4 +1,4 @@
-package com.hyx.demo._02_completablefuture_create;
+package com.hyx.introduce._02_completablefuture_create;
 
 import com.hyx.utils.CommonUtils;
 

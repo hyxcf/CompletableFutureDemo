@@ -1,4 +1,4 @@
-package com.hyx.demo._04_completablefuture_arrange;
+package com.hyx.introduce._04_completablefuture_arrange;
 
 import com.hyx.utils.CommonUtils;
 
