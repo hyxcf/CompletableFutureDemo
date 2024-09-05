@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import java.text.DateFormat;
 import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.StringJoiner;
 import java.util.concurrent.TimeUnit;
@@ -55,20 +56,20 @@ public class CommonUtils {
      * 构造函数:
      * StringJoiner(CharSequence delimiter) — 仅设置分隔符。
      * StringJoiner(CharSequence delimiter, CharSequence prefix, CharSequence suffix) — 设置分隔符、前缀和后缀。
-     *
-     * @param msg
      */
     // 打印输出带线程的信息的日志
-    public static void printThreadLog(String msg) {
-        // 时间戳  | 线程id | 线程名 | 日志信息
+    public static void printThreadLog(String message) {
+        // 时间戳 | 线程id | 线程名 | 日志信息
         String result = new StringJoiner(" | ")
-                .add(LocalDateTime.now().getSecond() + " " + LocalDateTime.now().getNano())
+                .add(getCurrentTime())
                 .add(String.format("%2d", Thread.currentThread().getId()))
                 .add(Thread.currentThread().getName())
-                .add(msg)
+                .add(message)
                 .toString();
         System.out.println(result);
     }
-
-
+    private static String getCurrentTime() {
+        LocalTime time = LocalTime.now();
+        return time.format(DateTimeFormatter.ofPattern("[HH:mm:ss.SSS]"));
+    }
 }
