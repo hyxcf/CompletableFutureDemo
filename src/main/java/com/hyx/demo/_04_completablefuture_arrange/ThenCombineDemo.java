@@ -1,8 +1,7 @@
-package com.hyx.demo._04_completablefuture_arrar;
+package com.hyx.demo._04_completablefuture_arrange;
 
 import com.hyx.utils.CommonUtils;
 
-import java.util.Arrays;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
