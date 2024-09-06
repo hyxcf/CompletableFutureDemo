@@ -16,7 +16,7 @@ public class UserController {
 
     @RequestMapping("/logout")
     public String logout(){
-        return "logout success !" ;
+        return "logout success2!" ;
     }
 
     @RequestMapping("/query")
