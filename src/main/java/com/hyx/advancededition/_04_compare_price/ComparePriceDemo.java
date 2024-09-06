@@ -1,5 +1,6 @@
 package com.hyx.advancededition._04_compare_price;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -36,5 +37,12 @@ public class ComparePriceDemo {
         double costTime = (end - start) / 1000.0;
         System.out.printf("cost %.2f second \n",costTime);
         System.out.println("priceResult = " + priceResult);*/
+
+        // 异步任务的批量操作
+        ComparePriceService service = new ComparePriceService();
+        List<String> products = Arrays.asList("iPhone15黑色", "iPhone15白色", "iPhone15金色");
+        PriceResult priceResult = service.batchComparePrice(products);
+        System.out.println("priceResult=" + priceResult);
+
     }
 }
