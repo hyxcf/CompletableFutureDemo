@@ -30,7 +30,6 @@ public class ComparePriceService {
                 .sorted(Comparator.comparing(PriceResult::getRealPrice))
                 .findFirst()
                 .get();
-
     }
 
     // 方案三：使用 CompletableFuture 进一步增强并行 6个线程同时操作 真强啊！！！我勒个老豆
