@@ -14,6 +14,9 @@ public class UserController {
         return "login success !";
     }
 
-
+    @RequestMapping("/logout")
+    public String logout(){
+        return "logout success !";
+    }
 
 }
