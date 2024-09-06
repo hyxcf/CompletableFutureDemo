@@ -21,7 +21,7 @@ public class UserController {
 
     @RequestMapping("/query")
     public String query(String username){
-        return "query success111!";
+        return "query success 123123123123!";
     }
 
 }
